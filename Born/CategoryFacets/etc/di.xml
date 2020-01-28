@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Born_CategoryFacets
+ *
+ * PHP version 5.x-7.x
+ *
+ * @category  PHP
+ * @package   Born\CategoryFacets
+ * @author    Born Support <support@borngroup.com>
+ * @copyright 2019 Copyright BORN Commerce Pvt Ltd, https://www.borngroup.com/
+ * @license   https://www.borngroup.com/ Private
+ * @link      https://www.davidsbridal.com/
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Preferance for CategoryFacets RepositoryInterface Implementation -->
+    <preference for="Born\CategoryFacets\Api\CategoryFacetsRepositoryInterface" type="Born\CategoryFacets\Model\CategoryFacetsRepository"/>
+    <!-- Preferance for CategoryFacets Data RepositoryInterface Implementation-->
+    <preference for="Born\CategoryFacets\Api\Data\CategoryFacetsInterface" type="Born\CategoryFacets\Model\CategoryFacets"/>
+    <!-- Preferance for CategoryFacets Data CategoryFacetsSearchResultsInterface Implementation-->
+    <preference for="Born\CategoryFacets\Api\Data\CategoryFacetsSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+
+    <!-- Preferance for CategoryFacetsOption RepositoryInterface Implementation -->
+    <preference for="Born\CategoryFacets\Api\CategoryFacetsOptionRepositoryInterface" type="Born\CategoryFacets\Model\CategoryFacetsOptionRepository"/>
+    <!-- Preferance for CategoryFacetsOption Data CategoryFacetsOptionInterface Implementation-->
+    <preference for="Born\CategoryFacets\Api\Data\CategoryFacetsOptionInterface" type="Born\CategoryFacets\Model\CategoryFacetsOption"/>
+</config>

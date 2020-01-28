@@ -1,0 +1,24 @@
+{
+  "name": "born/module-categoryfacets",
+  "description": "Catalog Sorting options",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Born Support",
+      "email": "support@borngroup.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "~7.1.3||~7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Born\\CategoryFacets\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

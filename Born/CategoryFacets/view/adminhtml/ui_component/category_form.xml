@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Born_CategoryFacets
+ *
+ * PHP version 5.x-7.x
+ *
+ * @category  PHP
+ * @package   Born\CategoryFacets
+ * @author    Born Support <support@borngroup.com>
+ * @copyright 2019 Copyright BORN Commerce Pvt Ltd, https://www.borngroup.com/
+ * @license   https://www.borngroup.com/ Private
+ * @link      https://www.davidsbridal.com/
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="category_attribute_set" sortOrder="80">
+        <settings>
+            <collapsible>true</collapsible>
+            <label translate="true">Category Facets</label>
+        </settings>
+        <container name="category_facet_index" sortOrder="180">
+            <field name="meta_description" sortOrder="50" formElement="textarea">
+                <settings>
+                    <dataType>string</dataType>
+                    <label translate="true">Category Facet</label>
+                </settings>
+            </field>
+            <field name="category_attribute_set">
+                <argument name="data" xsi:type="array">
+                    <item name="options" xsi:type="object">Born\CategoryFacets\Model\AttributeSets</item>
+                    <item name="config" xsi:type="array">
+                        <item name="sortOrder" xsi:type="number">52</item>
+                        <item name="dataType" xsi:type="string">string</item>
+                        <item name="formElement" xsi:type="string">select</item>
+                        <item name="label" xsi:type="string" translate="true">Select Attribute Set</item>
+                        <item name="valueMap" xsi:type="array">
+                            <item name="true" xsi:type="string">1</item>
+                            <item name="false" xsi:type="string">0</item>
+                        </item>
+                        <item name="default" xsi:type="string">0</item>
+                        <item name="scopeLabel" xsi:type="string">[STORE VIEW]</item>
+                    </item>
+                </argument>
+            </field>
+            <htmlContent name="html_content">
+                <block name="category_facets_block" class="Born\CategoryFacets\Block\Adminhtml\CategoryFacets\Tabs"/>
+            </htmlContent>
+        </container>
+    </fieldset>
+</form>

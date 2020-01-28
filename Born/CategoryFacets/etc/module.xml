@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Born_CategoryFacets
+ *
+ * PHP version 5.x-7.x
+ *
+ * @category  PHP
+ * @package   Born\CategoryFacets
+ * @author    Born Support <support@borngroup.com>
+ * @copyright 2019 Copyright BORN Commerce Pvt Ltd, https://www.borngroup.com/
+ * @license   https://www.borngroup.com/ Private
+ * @link      https://www.davidsbridal.com/
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Born_CategoryFacets">
+        <sequence>
+            <module name="Magento_Catalog"/>
+            <module name="Magento_Authorization"/>
+        </sequence>
+    </module>
+</config>
